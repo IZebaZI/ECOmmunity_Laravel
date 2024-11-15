@@ -1,3 +1,38 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.map{
+    width: 100%;
+}
+
+.bg-color{
+    background-color: rgb(231, 252, 231);
+    /* background-image: url('../../public/img/bg.jpg'); */
+    /* background-position: center; */
+    /* background-repeat: no-repeat; */
+    /* background-size:contain; */
+    /* background-size: cover; */
+}
+
+.bg-img{
+    background-image: url('../../public/img/bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.blog-img{
+    background-image: url('../../public/img/blog.jpg');
+    background-size: cover
+}
+
+.tutorial-img{
+    background-image: url('../../public/img/tutorial.jpg');
+    background-size: cover
+}
+
+.ideas-img{
+    background-image: url('../../public/img/ideas.jpeg');
+    background-size: cover
+}
