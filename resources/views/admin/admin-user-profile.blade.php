@@ -13,10 +13,10 @@
                 <img>
                 <div class="card-body text-center">
                     <img src="{{asset('img/profile.jpg')}}" class="card-img-top img-fluid p-3" alt="...">
-                    <h5 class="card-title">Nombre de Usuario [ID_Usuario]</h5>
+                    <h5 class="card-title">{{$userInfo->nombre}} [ID: {{$userInfo->id}}]</h5>
 
-                    <p class="card-text mb-2">Ciudad: Queretaro</p>
-                    <p class="card-text mb-2">Fecha de Creación: 1000/01/01</p>
+                    <p class="card-text mb-2">Ciudad: {{$userInfo->ciudad}}</p>
+                    <p class="card-text mb-2">Fecha de Creación: {{$userInfo->created_at}}</p>
                     <b class="card-text mb-1">Redes Sociales:</b>
                     <p class="card-text mb-1"><i class="bi bi-facebook"></i> Facebook</p>
                     <p class="card-text mb-1"><i class="bi bi-instagram"></i> Instagram</p>

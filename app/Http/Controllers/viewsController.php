@@ -6,21 +6,7 @@ use Illuminate\Http\Request;
 
 class viewsController extends Controller
 {
-    // AUTH VIEWS --------------------------------------------------------
-    public function login(){
-        return view('auth.login');
-    }
-
-    public function register(){
-        return view('auth.register');
-    }
-
-
     //ADMIN VIEWS --------------------------------------------------------
-    public function usersList(){
-        return view('admin.user-list');
-    }
-
     public function companiesList(){
         return view('admin.company-list');
     }

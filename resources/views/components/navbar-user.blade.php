@@ -48,7 +48,7 @@
             </li>
 
             <li class="list-group-item">
-                <a class="btn btn-danger my-3" href="{{route('login')}}">
+                <a class="btn btn-danger my-3" href="{{route('logout')}}">
                     <i class="bi bi-box-arrow-right"></i>
                     Salir</a>
             </li>

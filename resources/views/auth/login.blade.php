@@ -2,18 +2,28 @@
 @section('title', 'Bienvenido a ECOmmunity')
 
 @section('messages')
-
+    @session('message')
+    <div class="alert alert-success" role="alert">
+        {{$value}}
+    </div>
+    @endsession
+    @session('error')
+    <div class="alert alert-danger" role="alert">
+        {{$value}}
+    </div>
+    @endsession
 @endsection
 
 @section('card-content')
 
 <span class="h1 mt-2 justify-content-center">Inicio de Sesión</span>
 <div class="mt-4">
-    <form action="" method="POST">
+    <form action="{{route('access')}}" method="GET">
         <div class="">
             <label for="email" class="mb-2">Correo</label>
             <div class="">
-                <input id="email" type="email" class="form-control" name="txtEmail" value="" required autocomplete="email" autofocus>
+                <input id="email" type="email" class="form-control" name="txtEmail" value="{{old('txtEmail')}}" required autocomplete="email" autofocus>
+                <small class="text-danger fst-italic">{{$errors->first('txtEmail')}}</small>
             </div>
         </div>
     
@@ -21,7 +31,8 @@
             <label for="password" class="mt-3">Contraseña</label>
     
             <div class="">
-                <input id="password" type="password" class="form-control" name="txtPassword" required autocomplete="current-password">
+                <input id="password" type="password" class="form-control" name="txtPassword" value="{{old('txtPassword')}}" required autocomplete="current-password">
+                <small class="text-danger fst-italic">{{$errors->first('txtPassword')}}</small>
             </div>
         </div>
     
